@@ -7,6 +7,7 @@ const cartItemsEl = document.getElementById("cartItems");
 const cartSubtotalEl = document.getElementById("cartSubtotal");
 const cartActions = document.getElementById("cartActions");
 const checkoutForm = document.getElementById("checkoutForm");
+const paymentForm = document.getElementById("paymentForm");
 const checkoutButton = document.getElementById("checkoutButton");
 const cartTitle = document.getElementById("cartTitle");
 const toastEl = document.getElementById("toast");
@@ -285,6 +286,7 @@ checkoutButton.addEventListener("click", () => {
 document.getElementById("backToCart").addEventListener("click", () => {
   cartDialog.classList.remove("checkout-mode");
   checkoutForm.hidden = true;
+  paymentForm.hidden = true;
   cartActions.hidden = cart.size === 0;
   cartTitle.textContent = "Your Cart";
 });
@@ -292,20 +294,41 @@ document.getElementById("backToCart").addEventListener("click", () => {
 checkoutForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (signedInUser === null || !checkoutForm.reportValidity() || cart.size === 0) return;
+  checkoutForm.hidden = true;
+  paymentForm.hidden = false;
+  cartTitle.textContent = "Payment Method";
+  paymentForm.querySelector('input[name="paymentMethod"]').focus();
+});
+
+document.getElementById("backToDetails").addEventListener("click", () => {
+  paymentForm.hidden = true;
+  checkoutForm.hidden = false;
+  cartTitle.textContent = "Checkout";
+  document.getElementById("checkoutName").focus();
+});
+
+paymentForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (signedInUser === null || !paymentForm.reportValidity() || cart.size === 0) return;
   const customerName = document.getElementById("checkoutName").value.trim();
+  const paymentMethod = paymentForm.elements.paymentMethod.value;
   cart.clear();
   renderCart();
   checkoutForm.reset();
+  paymentForm.reset();
   cartDialog.classList.remove("checkout-mode");
   checkoutForm.hidden = true;
+  paymentForm.hidden = true;
   cartTitle.textContent = "Your Cart";
   cartDialog.close();
-  showToast(`Thanks, ${customerName}! Demo order placed; no payment was processed.`);
+  const paymentLabel = paymentMethod === "cash-on-delivery" ? "Cash on Delivery" : "Credit or Debit Card";
+  showToast(`Thanks, ${customerName}! Demo order placed with ${paymentLabel}; no payment was processed.`);
 });
 
 cartDialog.addEventListener("close", () => {
   cartDialog.classList.remove("checkout-mode");
   checkoutForm.hidden = true;
+  paymentForm.hidden = true;
   cartActions.hidden = cart.size === 0;
   cartTitle.textContent = "Your Cart";
 });

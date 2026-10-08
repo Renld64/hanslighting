@@ -821,6 +821,10 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.cart-dialog [hidden] {
+  display: none !important;
+}
+
 .cart-dialog::backdrop {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -897,7 +901,15 @@ textarea {
   padding-top: 22px;
 }
 
+.payment-form {
+  padding-top: 22px;
+}
+
 .checkout-form h3 {
+  margin-bottom: 4px;
+}
+
+.payment-form h3 {
   margin-bottom: 4px;
 }
 
@@ -926,6 +938,37 @@ textarea {
 .checkout-form textarea:focus {
   outline: none;
   border-color: var(--primary);
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.payment-option:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--bg-elevated);
+}
+
+.payment-option input {
+  margin-top: 4px;
+  accent-color: var(--primary);
+}
+
+.payment-option > span {
+  display: grid;
+  gap: 4px;
+}
+
+.payment-option > span > span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
 .checkout-actions {

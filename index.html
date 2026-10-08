@@ -340,6 +340,28 @@
         <button class="btn btn-primary" type="submit">Place Order</button>
       </div>
     </form>
+    <form class="payment-form" id="paymentForm" hidden>
+      <h3>Choose a payment method</h3>
+      <p class="checkout-note">Demo checkout only. No payment details are collected or processed.</p>
+      <label class="payment-option">
+        <input type="radio" name="paymentMethod" value="cash-on-delivery" required />
+        <span>
+          <strong>Cash on Delivery</strong>
+          <span>Pay when your order arrives.</span>
+        </span>
+      </label>
+      <label class="payment-option">
+        <input type="radio" name="paymentMethod" value="card-demo" required />
+        <span>
+          <strong>Credit or Debit Card</strong>
+          <span>Demo option only; no card details or payment will be requested.</span>
+        </span>
+      </label>
+      <div class="checkout-actions">
+        <button class="btn btn-outline" id="backToDetails" type="button">Back to details</button>
+        <button class="btn btn-primary" type="submit">Confirm Order</button>
+      </div>
+    </form>
   </dialog>
 
   <!-- Toast -->
