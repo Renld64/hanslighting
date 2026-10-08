@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hanslighting | LED Ceiling & Tube Lights</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">💡</span>
+        <span class="logo-text">hanslighting</span>
+      </a>
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">☀️</button>
+        <button class="icon-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn account-btn" type="button">
+          👤 <span class="account-label">Sign Up</span>
+        </button>
+        <button class="icon-btn cart-btn" type="button" aria-label="Cart, 0 items" hidden>
+          🛒 <span class="cart-count">0</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Professional LED Lighting</p>
+        <h1>Bright. Efficient.<br />Built to Last.</h1>
+        <p class="hero-desc">
+          High-performance LED tube and ceiling lights for homes, offices, and commercial spaces.
+          Energy-saving, long lifespan, and crystal-clear illumination.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">Shop Lights</a>
+          <a href="#features" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="product-card-hero">
+          <div class="badge-group">
+            <span class="badge">75W</span>
+            <span class="badge badge-temp">6500K</span>
+          </div>
+          <div class="light-visual">
+            <div class="tube-body"></div>
+            <div class="tube-glow"></div>
+          </div>
+          <p class="product-label">LED Tube Light · 220V</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our LED Lights</h2>
+        <p>Choose the perfect wattage for your space</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- 30W -->
+        <article class="product-card" data-id="30w">
+          <div class="product-image">
+            <img class="product-photo product-photo-30" src="images/led-tube.svg" alt="LED tube light, 30W" />
+            <span class="watt-badge">30W</span>
+          </div>
+          <div class="product-info">
+            <h3>LED Tube Light 30W</h3>
+            <p class="sku">30W 1PC · 220V</p>
+            <p class="price">$12.90</p>
+            <div class="product-actions">
+              <select class="qty-select" aria-label="Quantity">
+                <option value="1">1 PC</option>
+                <option value="2">2 PC</option>
+                <option value="5">5 PC</option>
+                <option value="10">10 PC</option>
+              </select>
+              <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 60W -->
+        <article class="product-card featured" data-id="60w">
+          <div class="product-image">
+            <img class="product-photo product-photo-60" src="images/led-tube.svg" alt="LED tube light, 60W" />
+            <span class="watt-badge">60W</span>
+            <span class="tag">Popular</span>
+          </div>
+          <div class="product-info">
+            <h3>LED Tube Light 60W</h3>
+            <p class="sku">60W 1PC · 60CM · 220V</p>
+            <p class="price">$18.50</p>
+            <div class="product-actions">
+              <select class="qty-select" aria-label="Quantity">
+                <option value="1">1 PC</option>
+                <option value="2">2 PC</option>
+                <option value="5">5 PC</option>
+                <option value="10">10 PC</option>
+              </select>
+              <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 75W -->
+        <article class="product-card" data-id="75w">
+          <div class="product-image">
+            <img class="product-photo product-photo-75" src="images/led-tube.svg" alt="LED tube light, 75W" />
+            <span class="watt-badge">75W</span>
+            <span class="temp-badge">6500K</span>
+          </div>
+          <div class="product-info">
+            <h3>LED Tube Light 75W</h3>
+            <p class="sku">75W 1PC · 6500K · 220V</p>
+            <p class="price">$24.90</p>
+            <div class="product-actions">
+              <select class="qty-select" aria-label="Quantity">
+                <option value="1">1 PC</option>
+                <option value="2">2 PC</option>
+                <option value="5">5 PC</option>
+                <option value="10">10 PC</option>
+              </select>
+              <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Hanslighting?</h2>
+        <p>Designed for performance and reliability</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Energy Efficient</h3>
+          <p>Up to 80% less energy than traditional fluorescent tubes while delivering superior brightness.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔆</div>
+          <h3>High Color Accuracy</h3>
+          <p>6500K daylight white for clear, natural illumination ideal for workspaces and homes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Long Lifespan</h3>
+          <p>Rated for 50,000+ hours of continuous use with stable performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3>Easy Install</h3>
+          <p>Direct 220V connection. Compatible with standard ceiling fixtures and tube holders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs -->
+  <section id="specs" class="section specs">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Specifications</h2>
+        <p>Key details for the 75W model</p>
+      </div>
+      <div class="specs-table-wrap">
+        <table class="specs-table">
+          <tbody>
+            <tr>
+              <th>Power</th>
+              <td>75W</td>
+            </tr>
+            <tr>
+              <th>Color Temperature</th>
+              <td>6500K (Daylight)</td>
+            </tr>
+            <tr>
+              <th>Voltage</th>
+              <td>220V AC</td>
+            </tr>
+            <tr>
+              <th>Type</th>
+              <td>LED Tube / Ceiling Light Fixture</td>
+            </tr>
+            <tr>
+              <th>Application</th>
+              <td>Indoor · Residential · Commercial</td>
+            </tr>
+            <tr>
+              <th>Available Variants</th>
+              <td>30W · 60W · 75W (1PC packs)</td>
+            </tr>
+            <tr>
+              <th>SKU Example</th>
+              <td>LED Tube Light 220V Fluorescent Indoor Ceiling</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta-inner">
+      <h2>Ready to upgrade your lighting?</h2>
+      <p>Contact us for bulk orders or custom requirements.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Questions about products or wholesale?</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tell us what you need..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">hanslighting</span>
+        <p>Quality LED lighting solutions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© 2026 Hanslighting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Demo account -->
+  <dialog class="cart-dialog account-dialog" id="accountDialog" aria-labelledby="accountTitle">
+    <div class="cart-header">
+      <h2 id="accountTitle">Create your account</h2>
+      <button class="icon-btn account-close" type="button" aria-label="Close account">✕</button>
+    </div>
+    <p class="checkout-note account-note">Demo account only. Credentials stay in this browser tab for the current session. Do not use a real password.</p>
+    <form id="accountForm" class="checkout-form">
+      <div class="form-group" id="accountNameGroup">
+        <label for="accountName">Full name</label>
+        <input type="text" id="accountName" name="name" autocomplete="name" required />
+      </div>
+      <div class="form-group">
+        <label for="accountEmail">Email</label>
+        <input type="email" id="accountEmail" name="email" autocomplete="email" required />
+      </div>
+      <div class="form-group">
+        <label for="accountPassword">Password</label>
+        <input type="password" id="accountPassword" name="password" autocomplete="new-password" minlength="8" required />
+      </div>
+      <p class="account-feedback" id="accountFeedback" role="status" hidden></p>
+      <button class="btn btn-primary account-submit" id="accountSubmit" type="submit">Sign Up</button>
+    </form>
+    <div class="account-footer">
+      <button class="text-button" id="accountModeToggle" type="button">Already signed up? Log in</button>
+      <button class="text-button" id="accountLogout" type="button" hidden>Log out</button>
+    </div>
+  </dialog>
+
+  <!-- Shopping cart -->
+  <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+    <div class="cart-header">
+      <h2 id="cartTitle">Your Cart</h2>
+      <button class="icon-btn cart-close" type="button" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0.00</strong>
+    </div>
+    <div class="cart-actions" id="cartActions">
+      <button class="btn btn-primary" id="checkoutButton" type="button">Checkout</button>
+    </div>
+    <form class="checkout-form" id="checkoutForm" hidden>
+      <h3>Checkout details</h3>
+      <p class="checkout-note">Demo checkout only. No payment will be processed.</p>
+      <div class="form-group">
+        <label for="checkoutName">Full name</label>
+        <input type="text" id="checkoutName" name="name" autocomplete="name" required />
+      </div>
+      <div class="form-group">
+        <label for="checkoutEmail">Email</label>
+        <input type="email" id="checkoutEmail" name="email" autocomplete="email" required />
+      </div>
+      <div class="form-group">
+        <label for="checkoutAddress">Delivery address</label>
+        <textarea id="checkoutAddress" name="address" rows="3" autocomplete="street-address" required></textarea>
+      </div>
+      <div class="checkout-actions">
+        <button class="btn btn-outline" id="backToCart" type="button">Back to cart</button>
+        <button class="btn btn-primary" type="submit">Place Order</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" hidden>Added to cart</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
